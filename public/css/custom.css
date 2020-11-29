@@ -47,6 +47,10 @@ form{
   background-color: var(--yellow-green-dark) !important;
 }
 
+.blue-text{
+  color: #5FB7F7 !important;
+}
+
 .blue-link{
   color: #5FB7F7 !important;
 }
@@ -62,13 +66,17 @@ form{
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
 .site-header {
   background-color:var(--white-pearl);
   /* box-shadow: 1px 1px 10px -5px grey; */
   border-bottom: 2px solid rgba(180, 180, 180, 0.315);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
+  justify-content: space-between !important; 
+  align-items:center !important;
 }
+
 .site-header a {
   color:var(--grey);
   font-family: 'Open Sans', sans-serif;
@@ -111,11 +119,11 @@ form{
 .nav-search{
   width: 50%;
   height: 40px;
+  margin: auto;
 }
 
 .nav-search .search-field{
   border: 1px rgba(128, 128, 128, 0.459) solid;
-  border-radius: 40px !important;
   padding: 0 15px;
   background-color: white;
 }
@@ -142,10 +150,6 @@ form{
 .menubar{
   border-bottom: 1px solid rgba(128, 128, 128, 0.315);
   margin-top: 2rem;
-}
-
-.nav-pills .nav-item a {
-  padding: .1rem 1.5rem;
 }
 
 .option-wrapper{
@@ -190,10 +194,14 @@ form{
   box-shadow: none;
 }
 
+.story-section{
+  border-left: 1px solid gray;
+}
+
 .storybox {
   color: #fff;
-  height: 50px;
-  width: 70%;
+  height: 75px;
+  width: 100%;
   border-radius: 3px;
   box-shadow: 0 5px 25px 0 rgba(123,123,123,.15);
   margin-bottom: 20px;
@@ -213,9 +221,6 @@ form{
 }
 .img-circle {
   border-radius: 50%;
-}
-img {
-  vertical-align: middle;
 }
 
 .story-body h4 {
@@ -240,8 +245,44 @@ img {
  /* Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap */
 
+@media (max-width: 320px){
+  .nav-pills .nav-item a {
+    padding: .1rem .8rem !important;
+  }
+  
+}
+
+@media (max-width: 360px){
+
+  .nav-pills .nav-item a {
+    padding: .1rem 1.6rem;
+  }
+}
+
 @media (max-width: 575.98px){
 
+  .nav-search{
+    width: 90%;
+    height: 40px;
+  }
+
+  .nav-search .search-field{
+    border-radius: 10px;
+  }
+
+  .site-header {
+    justify-content: space-around !important; 
+    align-items: center !important;
+  }
+
+  .menubar{
+    font-size: small;
+    justify-content: space-between !important;
+  }
+
+  .nav-pills .nav-item a {
+    padding: .1rem 1.6rem;
+  }
   
 }
 
@@ -250,6 +291,29 @@ No media query since this is the default in Bootstrap */
 ****************************************************************************************************************************/
 
 @media (min-width: 576px){
+
+  .nav-search{
+    width: 90%;
+    height: 40px;
+  }
+
+  .nav-search .search-field{
+    border-radius: 10px;
+  }
+
+  .site-header {
+    justify-content: space-around !important; 
+    align-items: center !important;
+  }
+
+  .menubar{
+    font-size: small;
+    justify-content: space-between !important;
+  }
+
+  .nav-pills .nav-item a {
+    padding: .1rem 1.6rem;
+  }
 
   /*===================================================================
                                 Landing page
@@ -267,9 +331,27 @@ No media query since this is the default in Bootstrap */
 
 @media (min-width: 768px){
 
+  .site-header {
+    justify-content: space-between !important; 
+    align-items:center !important;
+  }
+
+  .menubar{
+    font-size: medium;
+    justify-content: space-around !important;
+  }
+
   .nav-search{
-    width: 30%;
+    width: 35%;
     height: 40px;
+  }
+
+  .nav-search .search-field{
+    border-radius: 40px;
+  }
+
+  .nav-pills .nav-item a {
+    padding: .1rem 1.5rem;
   }
 }
 
@@ -281,9 +363,26 @@ No media query since this is the default in Bootstrap */
 
 @media (min-width: 992px){
 
+  .site-header {
+    justify-content: space-between !important; 
+    align-items:center !important;
+  }
+
   .nav-search{
     width: 40%;
     height: 40px;
+  }
+  .nav-search .search-field{
+    border-radius: 40px;
+  }
+
+  .menubar{
+    font-size: medium;
+    justify-content: space-around !important;
+  }
+
+  .nav-pills .nav-item a {
+    padding: .1rem 1.5rem;
   }
 
 }
@@ -293,10 +392,26 @@ No media query since this is the default in Bootstrap */
 @media (min-width: 1200px)
 {
 
+  .site-header {
+    justify-content: space-between !important; 
+    align-items: center !important;
+  }
 
   .nav-search{
     width: 40%;
     height: 40px;
+  }
+  .nav-search .search-field{
+    border-radius: 40px;
+  }
+
+  .menubar{
+    font-size: medium;
+    justify-content: space-around !important;
+  }
+
+  .nav-pills .nav-item a {
+    padding: .1rem 1.5rem;
   }
 
 }

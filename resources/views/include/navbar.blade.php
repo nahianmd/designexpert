@@ -1,7 +1,7 @@
 
 <!--=============================================== NAVBAR ===========================================-->
 
-<nav class="navbar navbar-expand-lg site-header py-lg-4 py-xl-4 sticky-top d-flex justify-content-between align-items-center">
+<nav class="navbar navbar-expand-lg site-header py-lg-4 py-xl-4 sticky-top d-flex">
 
     <div class="container">
         <!-- Brand -->
