@@ -7,7 +7,15 @@
 @endsection
 
 @section('foot')
-
+    <script>
+        $(function(){
+            var tags_check = $(":checkbox");
+            $("#clear-history").click(function(e){
+                e.preventDefault();
+                tags_check.prop('checked', false);
+            })
+        })
+    </script>
 @endsection
 
 @section('content')
@@ -41,7 +49,7 @@
             </li>
         </ul>
 
-        <a href="" class="nav-link blue-link">
+        <a href="" class="nav-link blue-link" id="clear-history">
             Clear History
         </a>
     </nav>

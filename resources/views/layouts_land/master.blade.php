@@ -10,6 +10,7 @@
 </head>
 <body>
     @yield('content')
+    @include('include.bottombar')
     @include('layouts_land.footer')
     @yield('foot')
 
