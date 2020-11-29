@@ -4,7 +4,7 @@
   /* Utilities */
   --white-pure:        #ffffff;
   --white:             #F4F7F6;
-  --white-pearl:       #f2f2f2;
+  --white-pearl:       #F6F6F6;
   --grey-ultra-light:  #888888;
   --grey-light:        #6A6E71;
   --grey:              #555555;
@@ -22,9 +22,7 @@
   --input-padding-y: .75rem;
 }
 
-body{
-    background:var(--white-pearl) !important;
-}
+
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Raleway', sans-serif !important;
@@ -49,13 +47,25 @@ form{
   background-color: var(--yellow-green-dark) !important;
 }
 
+.blue-link{
+  color: #5FB7F7 !important;
+}
+
+.blue-link:hover{
+  color: #2684c7 !important;
+}
 /*===================================================================================================
                                               Navbar
 ====================================================================================================*/
 
+.navbar{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 .site-header {
   background-color:var(--white-pearl);
-  box-shadow: 1px 1px 10px grey;
+  /* box-shadow: 1px 1px 10px -5px grey; */
+  border-bottom: 2px solid rgba(180, 180, 180, 0.315);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -71,7 +81,6 @@ form{
 }
 
 .site-header a:hover {
-  color: var(--yellow-green);
   text-decoration: none;
 }
 
@@ -105,7 +114,7 @@ form{
 }
 
 .nav-search .search-field{
-  border: 1px grey solid;
+  border: 1px rgba(128, 128, 128, 0.459) solid;
   border-radius: 40px !important;
   padding: 0 15px;
   background-color: white;
@@ -116,13 +125,112 @@ form{
 }
 
 
+.left-divider{
+  border-left: 1px solid rgba(128, 128, 128, 0.356);
+}
+.right-divider{
+  border-right: 1px solid rgba(128, 128, 128, 0.356);
+}
+
+
 
 
 /*===================================================================================================
                                               Landing Page
 ====================================================================================================*/
 
+.menubar{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+  margin-top: 2rem;
+}
 
+.nav-pills .nav-item a {
+  padding: .1rem 1.5rem;
+}
+
+.option-wrapper{
+  flex-wrap: wrap;
+
+}
+.option-wrapper .option-item{
+  position: relative;
+  margin: 10px;
+}
+
+.option-item .option-innner{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0px 5px -2px gray;
+  border: 2px solid transparent;
+}
+
+.option-item .checkbox{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+}
+
+.option-item .name{
+  font-size: medium;
+}
+
+.option-item .option-innner:hover{
+  transition: .3s ease;
+}
+
+.option-item .checkbox:checked ~ .option-innner{
+  color: white;
+  background-color: grey;
+  box-shadow: none;
+}
+
+.storybox {
+  color: #fff;
+  height: 50px;
+  width: 70%;
+  border-radius: 3px;
+  box-shadow: 0 5px 25px 0 rgba(123,123,123,.15);
+  margin-bottom: 20px;
+  padding: 0px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.story-body img {
+  width: 42px;
+  height: 42px;
+  float: center !important;
+  border: 2px dotted #fff;
+}
+.img-circle {
+  border-radius: 50%;
+}
+img {
+  vertical-align: middle;
+}
+
+.story-body h4 {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+}
+
+.story-body p {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+}
 
 /*============================================================================================================================
                                                         Display Setting
@@ -158,12 +266,9 @@ No media query since this is the default in Bootstrap */
 *************************************************************************************************************************/
 
 @media (min-width: 768px){
-  .site-header {
-    padding: 1.5rem 2rem;
-  }
 
   .nav-search{
-    width: 40%;
+    width: 30%;
     height: 40px;
   }
 }
@@ -176,12 +281,8 @@ No media query since this is the default in Bootstrap */
 
 @media (min-width: 992px){
 
-  .site-header {
-    padding: 2rem 4rem;
-  }
-
   .nav-search{
-    width: 50%;
+    width: 40%;
     height: 40px;
   }
 
@@ -191,12 +292,10 @@ No media query since this is the default in Bootstrap */
 /************************************ Extra large devices (large desktops, 1200px and up) ******************************/
 @media (min-width: 1200px)
 {
-  .site-header {
-    padding: 2rem 4rem;
-  }
+
 
   .nav-search{
-    width: 50%;
+    width: 40%;
     height: 40px;
   }
 
@@ -208,6 +307,11 @@ No media query since this is the default in Bootstrap */
 /*=======================================
   Extra utilities
   ======================================*/
+
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #E82210 !important;
+}
 
   .round-control-label{
     border: 1px solid var(--yellow-green);
