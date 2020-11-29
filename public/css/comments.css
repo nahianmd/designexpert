@@ -1,0 +1,61 @@
+/* .favorite-btn-wrapper{
+  padding-top: 4px;
+  height: 45px;
+  width: 45px;
+  border: 1px solid black !important;
+  border-radius: 50%;
+} */
+
+/* .favorite-btn{
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+} */
+
+/* .post-card:hover .favorite-btn{
+  transition: .6s ease;
+  cursor: pointer;
+  background-color: rgba(255, 158, 158, 0.534) !important;
+} */
+
+
+/* .bottom-btn{
+  position: absolute !important;
+  bottom: 1rem;
+  right: 15.7rem;
+} */
+
+/* .cardImage-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+
+} */
+
+/* .filter a div:hover{
+  border-color: var(--black) !important;
+} */
+
+/* .filter div{
+  border: 1px solid;
+} */
+
+/* .cardImage-container{
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px grey;
+} */
+
+/* .favorite-btn-wrapper{
+    padding-top: 4px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  } */

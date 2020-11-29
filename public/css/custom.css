@@ -1,0 +1,266 @@
+/* Colors */
+:root{
+  /* Colors */
+  /* Utilities */
+  --white-pure:        #ffffff;
+  --white:             #F4F7F6;
+  --white-pearl:       #f2f2f2;
+  --grey-ultra-light:  #888888;
+  --grey-light:        #6A6E71;
+  --grey:              #555555;
+  --grey-deep:         #474A4F;
+  --black:             #222629;
+  --blackest:          #000000;
+  --yellow-green:      #00B22D;
+  --yellow-green-dark: #199939;
+  --highlight-green:   #0ABF9E;
+  --congo-pink:        #FF847C;
+  --scarlet:           #F92672;
+
+  /* Padding */
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+body{
+    background:var(--white-pearl) !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif !important;
+  color: var(--black) !important;
+  font-weight: 500;
+}
+
+form{
+  font-family: 'Open Sans', sans-serif !important;
+  color: black !important;
+  font-size: 1rem !important;
+}
+
+.jumbotron{
+  background-color: #F7F7F9 !important;
+}
+
+.btn-success{
+  background-color: var(--yellow-green) !important;
+}
+.btn-success:hover{
+  background-color: var(--yellow-green-dark) !important;
+}
+
+/*===================================================================================================
+                                              Navbar
+====================================================================================================*/
+
+.site-header {
+  background-color:var(--white-pearl);
+  box-shadow: 1px 1px 10px grey;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color:var(--grey);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600 !important;
+  transition: ease-in-out color .15s;
+}
+
+.site-header i {
+  font-size: larger !important;
+}
+
+.site-header a:hover {
+  color: var(--yellow-green);
+  text-decoration: none;
+}
+
+.nav-item{
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.brand{
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+.navlinks{
+  margin: 0;
+  padding-left: 0;
+  display: inline-block !important;
+}
+.navlinks li{
+  display: inline-block !important;
+}
+
+.nav-avatar{
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+}
+
+.nav-search{
+  width: 50%;
+  height: 40px;
+}
+
+.nav-search .search-field{
+  border: 1px grey solid;
+  border-radius: 40px !important;
+  padding: 0 15px;
+  background-color: white;
+}
+
+.nav-search .search-field input:focus{
+  box-shadow: none !important;
+}
+
+
+
+
+/*===================================================================================================
+                                              Landing Page
+====================================================================================================*/
+
+
+
+/*============================================================================================================================
+                                                        Display Setting
+ ============================================================================================================================*/
+
+
+ /* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap */
+
+@media (max-width: 575.98px){
+
+  
+}
+
+/***************************************************************************************************************************
+                                        Small devices (landscape phones, 576px and up) 
+****************************************************************************************************************************/
+
+@media (min-width: 576px){
+
+  /*===================================================================
+                                Landing page
+  ===================================================================== */
+
+ 
+
+}
+
+
+
+/************************************************************************************************************************
+                                     Medium devices (tablets, 768px and up) 
+*************************************************************************************************************************/
+
+@media (min-width: 768px){
+  .site-header {
+    padding: 1.5rem 2rem;
+  }
+
+  .nav-search{
+    width: 40%;
+    height: 40px;
+  }
+}
+
+
+
+/***********************************************************************************************************
+                                    Large devices (desktops, 992px and up) 
+***********************************************************************************************************/
+
+@media (min-width: 992px){
+
+  .site-header {
+    padding: 2rem 4rem;
+  }
+
+  .nav-search{
+    width: 50%;
+    height: 40px;
+  }
+
+}
+
+
+/************************************ Extra large devices (large desktops, 1200px and up) ******************************/
+@media (min-width: 1200px)
+{
+  .site-header {
+    padding: 2rem 4rem;
+  }
+
+  .nav-search{
+    width: 50%;
+    height: 40px;
+  }
+
+}
+
+
+
+
+/*=======================================
+  Extra utilities
+  ======================================*/
+
+  .round-control-label{
+    border: 1px solid var(--yellow-green);
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .round-radio-input{
+    position: absolute;
+    left:40px;
+    opacity: 0;
+  }
+
+  .round-radio-input:checked ~ .round-control-label{
+    background-color: var(--yellow-green) !important;
+    color: white;
+  }
+
+  .round-check-input{
+    position: absolute;
+    left:40px;
+    opacity: 0;
+  }
+
+  .round-check-input:checked ~ .round-control-label{
+    background-color: var(--yellow-green) !important;
+    color: white;
+  }
+
+  .custom-control-input:hover,.custom-control-label:hover{
+    cursor: pointer;
+  }
+
+  .custom-control-input:focus~.custom-control-label::before {
+    border-color: var(--yellow-green) !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+  }
+
+  .custom-control-input:checked~.custom-control-label::before {
+    border-color: var(--yellow-green) !important;
+    background-color: var(--yellow-green) !important;
+  }
+
+  .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #5bd778 !important;
+  }
+
+  .custom-control-input:not(:disabled):active~.custom-control-label::before {
+    background-color: #d6f5dd !important;
+    border-color: #d6f5dd !important;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
