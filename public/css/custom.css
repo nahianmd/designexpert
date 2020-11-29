@@ -113,6 +113,7 @@ form{
 .nav-avatar{
   width: 25px;
   height: 25px;
+  border-radius: 50px;
 }
 
 .nav-search{

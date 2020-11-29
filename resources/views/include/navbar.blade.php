@@ -6,7 +6,7 @@
     <div class="container">
         <!-- Brand -->
         <a class="navbar-brand brand d-md-block d-lg-block d-xl-block d-sm-none d-none " href="/">
-            Full Banger
+           <em style="color: red">FULL BANGER</em>
         </a>
 
         <div class="nav-search">
